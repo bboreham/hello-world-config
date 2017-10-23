@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hello-world
+  spec:
+    replicas: 1
+    template:
+      metadata:
+        labels:
+          name: hello-world
+        spec:
+          containers:
+          - name: hello-world
+            image: gcr.io/k8s-demos-142718/github-bboreham-hello-world-image:0bd8a2baa85bce36d13c75539d38153d27a3483a
+            ports:
+            - containerPort: 80
