@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: gcr.io/k8s-demos-142718/github-bboreham-hello-world-image:51926c709974f25efd48a2fb461c215ea8d69308
+        image: gcr.io/k8s-demos-142718/github-bboreham-hello-world-image:665ee179d3f1e898db47d6e32675240cfee60240
         ports:
         - containerPort: 80
