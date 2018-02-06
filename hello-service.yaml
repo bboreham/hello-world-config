@@ -8,7 +8,7 @@ spec:
   - port: 80
     targetPort: 80
     protocol: TCP
-    nodePort: 30001
+    nodePort: 30002
   selector:
     name: hello-world
                                                                                             
