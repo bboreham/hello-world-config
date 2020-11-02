@@ -1,8 +1,6 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  annotations:
-    flux.weave.works/automated: "true"
   name: hello-world
 spec:
   replicas: 1
@@ -13,6 +11,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: gcr.io/k8s-demos-142718/github-bboreham-hello-world-image:f237503d34634c5c538e64d995e061e98c37fc9a
+        image: nginx
         ports:
         - containerPort: 80
